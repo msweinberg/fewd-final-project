@@ -1,10 +1,10 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>GetCoding Brainstorm</title>
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	</style>
 </head>
 <body>
@@ -16,15 +16,36 @@
 	<div id="splash">
 		<img src="images/planner2.jpg" id="planner" alt="planner icon" />
 		<div id="howmany">How many lessons are we brainstorming today? 	
-			<form>
-			<input type="text" id="number-of-lessons" placeholder="">
+			<form id="target">
+			<input type="text" id="number-of-lessons" placeholder="#" name="number-of-lessons">
+			<a href="#jump"><input type="submit" id="submit" value="Let's Go"></a>
 			</form>
 		</div>	
 	</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js">
-</script> 
-<script src="js/index.js"></script>
+<div id="gutter">
+	<!-- This is a blank space to scroll through -->
+</div>
+
+<section id="wrapper">
+	<aside id="sticky-generator">
+	<a name="jump"></a> 
+			<h1>Sticky Generator</h1>
+			<div class="sticky-template">
+				<img src="images/button_plus_blue.png" alt="clone button" id="clone-button">
+				<textarea id="sticky-text"></textarea>
+				<!-- Add ability to change sticky color -->
+			</div>
+			<!-- Add a scroll for if stickies go beyond height of browser -->
+		</aside>
+
+		<div id="brainstorm-board">
+			<!-- This should populate w/ divs based on the # of lessons in the previous screen -->
+		</div>
+</section>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+<script src="js/index.js"></script>	
 </body>
 </html>
