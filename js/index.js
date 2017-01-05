@@ -25,6 +25,7 @@ $("#howmany").hide();
 $('#clone-button').click(function(){
 	$('<p></p>').appendTo($('#sticky-generator'))
 	var newSticky = $('#sticky-template').clone();
+	newSticky.removeAttr('id');
 	newSticky.appendTo($('#sticky-generator'))
 	newSticky.draggable();
 
