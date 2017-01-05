@@ -24,7 +24,8 @@ $("#howmany").hide();
 // The sticky becomes draggable and can be moved onto the "brainstorm-board"
 $('#clone-button').click(function(){
 	$('<p></p>').appendTo($('#sticky-generator'))
-	var newSticky = $('.sticky-template').last().clone();
+	var newSticky = $('#sticky-template').clone();
+	newSticky.removeAttr('id');
 	newSticky.appendTo($('#sticky-generator'))
 	newSticky.draggable();
 
