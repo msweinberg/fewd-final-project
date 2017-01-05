@@ -24,10 +24,10 @@ $("#howmany").hide();
 // The sticky becomes draggable and can be moved onto the "brainstorm-board"
 $('#clone-button').click(function(){
 	$('<p></p>').appendTo($('#sticky-generator'))
-	var newSticky = $('.sticky-template').clone();
-	newSticky.draggable();
+	var newSticky = $('.sticky-template').last().clone().draggable();
 	newSticky.appendTo($('#sticky-generator'))
-	
+	newSticky.draggable();
+	// $('#sticky-text').val('')
 })
 
 // get the value of the input and populate the brainstorm board with that many divs
