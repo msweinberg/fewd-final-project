@@ -11,7 +11,7 @@ To-Do List
 3. ~~Smooth scroll~~
 4. ~~get the value of the lesson #~~
 5. ~~populate the divs (use append)~~
-6. ~~Adjust the CSS for the divs to fit the brainstorm board based on how many lessons. possibly grab the value in a global variable ~~
+6. ~~Adjust the CSS for the divs to fit the brainstorm board based on how many lessons~~
 7. Add media queries
 
 - When a sticky is cloned it is appended to the "sticky-generator"
