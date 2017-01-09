@@ -10,14 +10,14 @@ To-Do List
 - listen to the id of the form and submit on that id 
 - After submit,
 1. ~~Smooth scroll~~
-1. ~~get the value~~
-1. ~~populate the divs (use append)~~
-1. Adjust the CSS for the divs to fit the brainstorm board based on how many lessons
-- possibly grab the value in a global variable
+2. ~~get the value~~
+3. ~~populate the divs (use append)~~
+4. ~~Adjust the CSS for the divs to fit the brainstorm board based on how many lessons. possibly grab the value in a global variable ~~
+5. Add media queries
 
 - When a sticky is cloned it is appended to the "sticky-generator"
-- The sticky becomes draggable and can be moved onto the "brainstorm-board"
+- ~~The sticky becomes draggable and can be moved onto the "brainstorm-board"~~
 - When a sticky is moved to the "brainstorm-board" it is actually a clone that is dragged so the original stays in the sticky generator 
 
 ##CS Stuff
-- Create div style for stickies
+- ~~Create div style for stickies~~

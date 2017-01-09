@@ -32,15 +32,32 @@ $('#clone-button').click(function(){
 	// $('#sticky-text').val('')
 })
 
-// get the value of the input and populate the brainstorm board with that many divs
-$("#number-of-lessons").keyup(function() {
-    var value = $( this ).val();
+// get the value of the input and populate the brainstorm board with that many divs when the "let's go" button is clicked
+$("#submit").click(function() {
+    var value = $("#number-of-lessons").val();
     $( "p" ).text( value );
     console.log(value)
+    var lessonNumber = 1;
     for (i = value; i > 0; i--) {
     	console.log(i)
-    	$('#brainstorm-board').append('<div class="lesson"></div>')
+    	$('#brainstorm-board').append('<div class="lesson"> <h2> # ' + lessonNumber + '</h2> </div>');
+      lessonNumber++;
     }
+
+    var bbHeight = $("#sticky-generator").height();
+    var margin = 20;
+    var bbWidth = $("#sticky-generator").width();
+    console.log("sticky-generator width = " + bbWidth)
+    var lessonHeight = bbHeight - margin;
+    var lessonWidth = $(".lesson").width();
+    var numRows = Math.ceil(value / 5);
+    console.log("numRows" + numRows)
+    if (value > 5) {
+      lessonHeight = bbHeight / numRows - 20;
+      console.log("lesson height = " + lessonHeight)
+    }
+    $(".lesson").height(lessonHeight);
+    $(".lesson").width(lessonWidth);
   })
 
 
