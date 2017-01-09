@@ -6,12 +6,12 @@ To-Do List
 - Add ability to change sticky color
 
 ##JS Stuff
-- ~~Populate brainstorm-board w/ divs based on the # of lessons in the splash div~~
-- listen to the id of the form and submit on that id 
-- After submit,
-1. ~~Smooth scroll~~
-2. ~~get the value~~
-3. ~~populate the divs (use append)~~
+1. ~~Populate brainstorm-board w/ divs based on the # of lessons in the splash div~~
+2. listen to the id of the form and submit on that id 
+3. After submit,
+~~Smooth scroll~~
+~~get the value~~
+~~populate the divs (use append)~~
 4. ~~Adjust the CSS for the divs to fit the brainstorm board based on how many lessons. possibly grab the value in a global variable ~~
 5. Add media queries
 
