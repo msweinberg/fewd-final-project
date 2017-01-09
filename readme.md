@@ -7,7 +7,7 @@ To-Do List
 
 ##JS Stuff
 1. ~~Populate brainstorm-board w/ divs based on the # of lessons in the splash div~~
-2. listen to the id of the form and submit on that id 
+2. ~~listen to the id of the form and submit on that id~~ 
 3. ~~Smooth scroll~~
 4. ~~get the value of the lesson #~~
 5. ~~populate the divs (use append)~~
