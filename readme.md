@@ -8,12 +8,11 @@ To-Do List
 ##JS Stuff
 1. ~~Populate brainstorm-board w/ divs based on the # of lessons in the splash div~~
 2. listen to the id of the form and submit on that id 
-3. After submit,
-~~Smooth scroll~~
-~~get the value~~
-~~populate the divs (use append)~~
-4. ~~Adjust the CSS for the divs to fit the brainstorm board based on how many lessons. possibly grab the value in a global variable ~~
-5. Add media queries
+3. ~~Smooth scroll~~
+4. ~~get the value of the lesson #~~
+5. ~~populate the divs (use append)~~
+6. ~~Adjust the CSS for the divs to fit the brainstorm board based on how many lessons. possibly grab the value in a global variable ~~
+7. Add media queries
 
 - When a sticky is cloned it is appended to the "sticky-generator"
 - ~~The sticky becomes draggable and can be moved onto the "brainstorm-board"~~
