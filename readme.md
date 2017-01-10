@@ -7,14 +7,14 @@ To-Do List
 
 ##JS Stuff
 1. ~~Populate brainstorm-board w/ divs based on the # of lessons in the splash div~~
-2. ~~listen to the id of the form and submit on that id~~ 
-3. ~~Smooth scroll~~
-4. ~~get the value of the lesson #~~
-5. ~~populate the divs (use append)~~
-6. ~~Adjust the CSS for the divs to fit the brainstorm board based on how many lessons~~
-7. Add media queries
-8. Detect if sticky present in sticky generator 
-9. If sticky text box is changed then change size of sticky
+1. ~~listen to the id of the form and submit on that id~~ 
+1. ~~Smooth scroll~~
+1. ~~get the value of the lesson #~~
+1. ~~populate the divs (use append)~~
+1. ~~Adjust the CSS for the divs to fit the brainstorm board based on how many lessons~~
+1. Add media queries
+1. Detect if sticky present in sticky generator 
+1. If sticky text box is changed then change size of sticky
 
 - When a sticky is cloned it is appended to the "sticky-generator"
 - ~~The sticky becomes draggable and can be moved onto the "brainstorm-board"~~

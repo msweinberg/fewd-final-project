@@ -63,6 +63,8 @@ form {
 	display: flex;
 /*	float: left;*/
 	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-around;
 }
 
 #sticky-generator {
@@ -84,13 +86,14 @@ form {
 }
 
 #sticky-text {
-	background-color: yellow;
+	background-color: rgba(255,255,255,0.1);
 	width: 75%;
 	display: inline-block;
 	height: 75px;
 	border-style: none;
 	margin-top: 5px;
-	opacity: 0.1;
+	/*opacity: 0.1;*/
+	/*color: black;*/
 }
 
 #clone-button{
@@ -101,6 +104,8 @@ form {
 	width: 18%;
 	height: 500px;
 	border-style: solid;
-	display: inline-block;
-	margin: 5px;
+	/*display: inline-block;*/
+	/*margin: 5px;*/
+	flex: 1;
+	flex-basis: 20%;
 }
