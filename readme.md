@@ -3,7 +3,7 @@ To-Do List
 ##HTML Stuff
 - ~~Add an icon for cloning the sticky~~
 - ~~Add text input area for sticky~~
-- Add ability to change sticky color
+- ~~Add ability to change sticky color~~
 
 ##JS Stuff
 1. ~~Populate brainstorm-board w/ divs based on the # of lessons in the splash div~~
@@ -13,6 +13,8 @@ To-Do List
 5. ~~populate the divs (use append)~~
 6. ~~Adjust the CSS for the divs to fit the brainstorm board based on how many lessons~~
 7. Add media queries
+8. Detect if sticky present in sticky generator 
+9. If sticky text box is changed then change size of sticky
 
 - When a sticky is cloned it is appended to the "sticky-generator"
 - ~~The sticky becomes draggable and can be moved onto the "brainstorm-board"~~
@@ -20,3 +22,4 @@ To-Do List
 
 ##CS Stuff
 - ~~Create div style for stickies~~
+- Stylize color picker

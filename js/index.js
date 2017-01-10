@@ -26,11 +26,27 @@ $('#clone-button').click(function(){
 	$('<p></p>').appendTo($('#sticky-generator'))
 	var newSticky = $('#sticky-template').clone();
 	newSticky.removeAttr('id');
+  
+  // remove color picker from the clone
+  var newStickyCP = newSticky.find("#colorPicker")
+  newStickyCP.remove();
+
+  // remove cloning image from clones
+  var newStickyCB = newSticky.find("#clone-button")
+  newStickyCB.remove();
+
 	newSticky.appendTo($('#sticky-generator'))
 	newSticky.draggable();
 
 	// $('#sticky-text').val('')
 })
+
+$("#colorPicker").change(function(){
+  // console.log("colorPicker");
+  let stickyColor = $("#colorPicker").val();
+  console.log(stickyColor);
+  $("#sticky-template").css("background-color", stickyColor)
+});
 
 // get the value of the input and populate the brainstorm board with that many divs when the "let's go" button is clicked
 $("#submit").click(function() {
@@ -44,20 +60,20 @@ $("#submit").click(function() {
       lessonNumber++;
     }
 
-    var bbHeight = $("#sticky-generator").height();
-    var margin = 20;
-    var bbWidth = $("#sticky-generator").width();
-    console.log("sticky-generator width = " + bbWidth)
-    var lessonHeight = bbHeight - margin;
-    var lessonWidth = $(".lesson").width();
-    var numRows = Math.ceil(value / 5);
-    console.log("numRows" + numRows)
-    if (value > 5) {
-      lessonHeight = bbHeight / numRows - 20;
-      console.log("lesson height = " + lessonHeight)
-    }
-    $(".lesson").height(lessonHeight);
-    $(".lesson").width(lessonWidth);
+    // var bbHeight = $("#sticky-generator").height();
+    // var margin = 20;
+    // var bbWidth = $("#sticky-generator").width();
+    // console.log("sticky-generator width = " + bbWidth)
+    // var lessonHeight = bbHeight - margin;
+    // var lessonWidth = $(".lesson").width();
+    // var numRows = Math.ceil(value / 5);
+    // console.log("numRows" + numRows)
+    // if (value > 5) {
+    //   lessonHeight = bbHeight / numRows - 20;
+    //   console.log("lesson height = " + lessonHeight)
+    // }
+    // $(".lesson").height(lessonHeight);
+    // $(".lesson").width(lessonWidth);
   })
 
 

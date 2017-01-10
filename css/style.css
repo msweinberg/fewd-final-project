@@ -56,16 +56,17 @@ form {
 #brainstorm-board {
 	/*background-image: url(../images/seamless-paper-patterns-15.jpg);*/
 	background-color: white;
-	height: 1000px;
+	/*height: 1000px;*/
 	width: 85%;
 	opacity: 0.9;
 	text-align: center;
-	display: inline-block;
-	float: left;
+	display: flex;
+/*	float: left;*/
+	flex-wrap: wrap;
 }
 
 #sticky-generator {
-	background-color: white;
+	/*background-color: white;*/
 	width: 15%;
 	height: 1000px;
 	display: inline-block;
@@ -86,9 +87,10 @@ form {
 	background-color: yellow;
 	width: 75%;
 	display: inline-block;
-	height: 80px;
+	height: 75px;
 	border-style: none;
 	margin-top: 5px;
+	opacity: 0.1;
 }
 
 #clone-button{
