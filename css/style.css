@@ -97,7 +97,8 @@ form {
 }
 
 #clone-button{
-	height: 20px;
+	height: 15px;
+	float: left;
 }
 
 .lesson {
@@ -108,4 +109,9 @@ form {
 	/*margin: 5px;*/
 	flex: 1;
 	flex-basis: 20%;
+}
+
+#colorPicker{
+	display: inline-block;
+	margin: 25px auto;
 }

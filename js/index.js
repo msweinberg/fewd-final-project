@@ -26,6 +26,7 @@ $('#clone-button').click(function(){
 	$('<p></p>').appendTo($('#sticky-generator'))
 	var newSticky = $('#sticky-template').clone();
 	newSticky.removeAttr('id');
+  newSticky.attr("contenteditable", "true");
   
   // remove color picker from the clone
   var newStickyCP = newSticky.find("#colorPicker")
@@ -36,7 +37,12 @@ $('#clone-button').click(function(){
   newStickyCB.remove();
 
 	newSticky.appendTo($('#sticky-generator'))
-	newSticky.draggable();
+  newSticky.draggable();
+	newSticky.click(function() {
+    $(this).draggable({ disabled: false });
+    }).dblclick(function() {
+    $(this).draggable({ disabled: true });
+  });
 
 	// $('#sticky-text').val('')
 })
