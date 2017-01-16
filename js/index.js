@@ -25,7 +25,7 @@ function checkSize(){
     } else {
       $( "#planner" ).click(function(e){
         e.preventDefault();
-        $( "#planner" ).animate({ left: "175px" });
+        $( "#planner" ).animate({ left: "50px" });
         console.log("clicked");
         $("#howmany").show();
       });
