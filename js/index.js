@@ -88,7 +88,7 @@ $("#submit").click(function() {
     var lessonNumber = 1;
     for (i = value; i > 0; i--) {
     	console.log(i)
-    	$('#brainstorm-board').append('<div class="lesson"> <h2> # ' + lessonNumber + '</h2> </div>');
+    	$('#brainstorm-board').append('<div class="lesson" contenteditable="true"> <h2> # ' + lessonNumber + '</h2> </div>');
       lessonNumber++;
     }
 

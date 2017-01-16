@@ -97,23 +97,32 @@ form {
 }
 
 #clone-button{
-	height: 15px;
-	float: left;
+	height: 20px;
+	float: right;
+	padding-top: 35px;
+	padding-right: 5px;
 }
 
 .lesson {
 	width: 18%;
 	height: 500px;
-	border-style: solid;
+	border-style: inset;
 	/*display: inline-block;*/
 	/*margin: 5px;*/
 	flex: 1;
 	flex-basis: 20%;
+	border-width: 1px;
 }
 
 #colorPicker{
 	display: inline-block;
-	margin: 25px auto;
+	margin: 0 auto;
+	border-style: none;
+	padding: 0px;
+	border-width: 0px;
+	height: 40px;
+	width: 100%;
+	border: none;
 }
 
 
