@@ -12,11 +12,10 @@ To-Do List
 1. ~~get the value of the lesson #~~
 1. ~~populate the divs (use append)~~
 1. ~~Adjust the CSS for the divs to fit the brainstorm board based on how many lessons~~
-1. Add media queries
+1. ~~Add media queries~~
 1. Detect if sticky present in sticky generator 
-1. If sticky text box is changed then change size of sticky
 
-- When a sticky is cloned it is appended to the "sticky-generator"
+- ~~When a sticky is cloned it is appended to the "sticky-generator"~~
 - ~~The sticky becomes draggable and can be moved onto the "brainstorm-board"~~
 - When a sticky is moved to the "brainstorm-board" it is actually a clone that is dragged so the original stays in the sticky generator 
 

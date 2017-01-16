@@ -1,23 +1,50 @@
-$(document).ready(function(){
 
+// MEDIA QUERY function:
+$(document).ready(function() {
+    // run test on initial page load
+    
+    checkSize();
 
+    // run test on resize of the window
+    $(window).resize(checkSize);
+// });
+checkSize();
+//Function to the css rule
 $("#howmany").hide();
 
-	$( "#planner" ).click(function(e){
-		e.preventDefault();
-		// debugger;
- 	 $( "#planner" ).animate({ left: "175px" });
- 	 console.log("clicked");
- 	 $("#howmany").show();
- 	 // $("#howmany").toggle("slide");
- 	 // $("#howmany").toggle("clip");
- 	});
+function checkSize(){
+    if ($(".sampleClass").css("float") === "none" ){
+      console.log('fired')
+        // your code here
+        $("#planner").click(function(e){
+          e.preventDefault();
+          $("#planner").hide();
+          $("#howmany").show();
 
-// Makes that sticky draggable
-// $( init );
-//  function init() {
-//   $('.sticky-template').draggable();
-// }
+        })
+    } else {
+      $( "#planner" ).click(function(e){
+        e.preventDefault();
+        $( "#planner" ).animate({ left: "175px" });
+        console.log("clicked");
+        $("#howmany").show();
+      });
+    }
+}
+// END MEDIA QUERY
+
+// $("#howmany").hide();
+
+//   $( "#planner" ).click(function(e){
+//     e.preventDefault();
+
+//    $( "#planner" ).animate({ left: "175px" });
+//    console.log("clicked");
+//    $("#howmany").show();
+//    // $("#howmany").toggle("slide");
+//    // $("#howmany").toggle("clip");
+//   });
+
 
 // When you click a sticky it clones
 // When a sticky is cloned it is appended to the "sticky-generator"
@@ -44,7 +71,6 @@ $('#clone-button').click(function(){
     $(this).draggable({ disabled: true });
   });
 
-	// $('#sticky-text').val('')
 })
 
 $("#colorPicker").change(function(){

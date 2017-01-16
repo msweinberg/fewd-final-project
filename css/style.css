@@ -115,3 +115,43 @@ form {
 	display: inline-block;
 	margin: 25px auto;
 }
+
+
+.sampleClass {
+	float: left;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 800px) {
+	.sampleClass { 
+		float: none;
+	}
+
+/*	#planner {
+		display: none;
+	}*/
+
+/*	#howmany {
+		display: inline-block;
+	}*/
+
+	#brainstorm-board {
+		flex-direction: column;
+	}
+
+	.lesson {
+		width: 100%;
+	}
+
+	#sticky-generator {
+
+	}
+
+
+}
+
+
+
+
+
+
