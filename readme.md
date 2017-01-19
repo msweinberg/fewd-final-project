@@ -16,6 +16,8 @@ To-Do List
 1. ~~Add media queries~~
 1. Detect if sticky present in sticky generator 
 1. ~~Make lessons contenteditable.~~
+1. ~~Input takes in a CSV file and puts it into an array~~
+1. When CSV file is uploaded it calls the sticky function populate and creates a new sticky with content in the div for each CSV
 
 - ~~When a sticky is cloned it is appended to the "sticky-generator"~~
 - ~~The sticky becomes draggable and can be moved onto the "brainstorm-board"~~

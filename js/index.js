@@ -49,10 +49,11 @@ function checkSize(){
 // When you click a sticky it clones
 // When a sticky is cloned it is appended to the "sticky-generator"
 // The sticky becomes draggable and can be moved onto the "brainstorm-board"
-$('#clone-button').click(function(){
-	$('<p></p>').appendTo($('#sticky-generator'))
-	var newSticky = $('#sticky-template').clone();
-	newSticky.removeAttr('id');
+
+function populate(){
+  $('<p></p>').appendTo($('#sticky-generator'))
+  var newSticky = $('#sticky-template').clone();
+  newSticky.removeAttr('id');
   newSticky.attr("contenteditable", "true");
   
   // remove color picker from the clone
@@ -63,15 +64,38 @@ $('#clone-button').click(function(){
   var newStickyCB = newSticky.find("#clone-button")
   newStickyCB.remove();
 
-	newSticky.appendTo($('#sticky-generator'))
+  newSticky.appendTo($('#sticky-generator'))
   newSticky.draggable();
-	newSticky.click(function() {
+  newSticky.click(function() {
     $(this).draggable({ disabled: false });
     }).dblclick(function() {
     $(this).draggable({ disabled: true });
   });
+}
 
-})
+$('#clone-button').click(populate);
+	// $('<p></p>').appendTo($('#sticky-generator'))
+	// var newSticky = $('#sticky-template').clone();
+	// newSticky.removeAttr('id');
+ //  newSticky.attr("contenteditable", "true");
+  
+ //  // remove color picker from the clone
+ //  var newStickyCP = newSticky.find("#colorPicker")
+ //  newStickyCP.remove();
+
+ //  // remove cloning image from clones
+ //  var newStickyCB = newSticky.find("#clone-button")
+ //  newStickyCB.remove();
+
+	// newSticky.appendTo($('#sticky-generator'))
+ //  newSticky.draggable();
+	// newSticky.click(function() {
+ //    $(this).draggable({ disabled: false });
+ //    }).dblclick(function() {
+ //    $(this).draggable({ disabled: true });
+ //  });
+
+// })
 
 $("#colorPicker").change(function(){
   // console.log("colorPicker");
@@ -125,6 +149,43 @@ $(function() {
   });
 });
 
+// The event listener for the file upload
+// From https://cmatskas.com/importing-csv-files-using-jquery-and-html5/
+    document.getElementById('txtFileUpload').addEventListener('change', upload, false);
+
+    // Method that checks that the browser supports the HTML5 File API
+    function browserSupportFileUpload() {
+        var isCompatible = false;
+        if (window.File && window.FileReader && window.FileList && window.Blob) {
+        isCompatible = true;
+        }
+        return isCompatible;
+    }
+
+    // Method that reads and processes the selected file
+    function upload(evt) {
+    if (!browserSupportFileUpload()) {
+        alert('The File APIs are not fully supported in this browser!');
+        } else {
+            var data = null;
+            var file = evt.target.files[0];
+            var reader = new FileReader();
+            reader.readAsText(file);
+            reader.onload = function(event) {
+                var csvData = event.target.result;
+                data = $.csv.toArrays(csvData);
+                if (data && data.length > 0) {
+                  alert('Imported -' + data.length + '- rows successfully!');
+                  console.log("imported")
+                } else {
+                    alert('No data to import!');
+                }
+            };
+            reader.onerror = function() {
+                alert('Unable to read ' + file.fileName);
+            };
+        }
+    }
 })
 
 
